@@ -3,7 +3,7 @@
 #name : class ...
 #group : definitions
 # --
-class ${1:`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`}
+class ${1:`(if buffer-file-name (file-name-nondirectory (file-name-sans-extension (buffer-file-name))) "Name")`}
 {
    public function __construct()
    {

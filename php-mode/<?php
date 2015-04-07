@@ -13,7 +13,7 @@
  * @copyright Copyright (c) ${5:`(format-time-string "%Y" (current-time))`} ${6:copyright}
  */
 
-namespace ${7:package};
+namespace $2;
 
 /**
  * $1
@@ -24,7 +24,7 @@ namespace ${7:package};
  * @author  $3 <$4>
  * @copyright Copyright (c) $5 $6
  */
-class ${9:`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`}
+class ${9:`(if buffer-file-name (file-name-nondirectory (file-name-sans-extension (buffer-file-name))) "Name")`}
 {
    public function ${10:__construct}()
    {
