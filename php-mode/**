@@ -1,0 +1,8 @@
+#contributor : Sliim <sliim@mailoo.org>
+#contributor : Davor Strehar <@ruph>
+#name : block comment
+#group : comments
+# --
+/**
+ *  $0
+ */
